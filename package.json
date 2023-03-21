@@ -35,6 +35,10 @@
   },
   "proxy": "http://localhost:3008/",
   "dependencies": {
+<<<<<<< Updated upstream
     "vite": "^4.2.0"
+=======
+    "firebase": "^9.18.0"
+>>>>>>> Stashed changes
   }
 }
