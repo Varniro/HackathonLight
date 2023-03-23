@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGO Registration</title>
+    <!-- Import Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #FFF4E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold mb-4">Register Your NGO</h1>
+        <form action="submit.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <!-- NGO Name -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="ngo_name">
+                    NGO Name
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="ngo_name" name="ngo_name" type="text" placeholder="Enter NGO Name">
+            </div>
+            <!-- Contact Person Name -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="cp_name">
+                    Contact Person Name
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cp_name" name="cp_name" type="text" placeholder="Enter Contact Person Name">
+            </div>
+            <!-- Contact Number -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="contact_number">
+                    Contact Number
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contact_number" name="contact_number" type="tel" placeholder="Enter Contact Number">
+            </div>
+            <!-- Contact Email -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="contact_email">
+                    Contact Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contact_email" name="contact_email" type="email" placeholder="Enter Contact Email">
+            </div>
+            <!-- Description -->
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="description">
+                    Description
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" name="description" rows="5" placeholder="Enter Description"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
