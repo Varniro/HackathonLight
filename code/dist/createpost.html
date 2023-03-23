@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title>Create post</title>
+    <style>
+      body{
+          background-color: #FFF4E0;
+      }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto mt-8">
+    <h1 class="text-3xl font-bold mb-4">CREATE YOUR POST</h1>
+  <form action="submit.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
+   
+   <!-- name -->
+    <div class="mb-4">
+      
+      <label class="block text-gray-700 font-bold mb-2" for="name">
+        Name
+      </label>
+      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Shivangi">
+    </div>
+    <!-- image -->
+    <div class="mb-4">
+      
+      <label class="block text-gray-700 font-bold mb-2" for="image">
+        Image
+      </label>
+      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="image" type="file">
+    </div>
+    <!-- description -->
+    <div class="mb-4">
+      
+      <label class="block text-gray-700 font-bold mb-2" for="description">
+        Description
+      </label>
+      <textarea class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" placeholder="Enter your description"></textarea>
+    </div>
+  </form>
+  </div>
+  
+    
+</body>
+</html>
+
+  
+    
