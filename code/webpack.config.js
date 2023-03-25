@@ -3,7 +3,10 @@ module.exports = {
   mode: 'production',
   entry: {
         index:'./src/index.js',
-        sub:'./src/sub.js'
+        sub:'./src/sub.js',
+        NGOreg:'./src/NGOreg.js',
+        browse:'./src/browse.js',
+        createPost: './src/createPost.js',
     },
   output: {
     path: path.resolve(__dirname, 'dist'),
