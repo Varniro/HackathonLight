@@ -3,25 +3,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ngo dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
    <style>
     .heading{
         color: #2E4057;
     }
+    h1{
+        color: #2E4057;
+        font-weight: 500;
+    }
+    section{
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-image: url("code\Assets\AA.jpg");
+    }
+    .image{
+    padding:2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+@keyframes scaleImage {
+    0%{
+       filter: grayscale(0);
+       transform: scale(1); 
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+
+}
    </style>
 </head>
 <body>
-    <section class="flex flex-row bg-[url('/code/Assets/BB.jpg')] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]">
+    <section class="flex flex-row">
         <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
             <!-- left part -->
         <div class="gap-2 flex flex-col justify-center">
-            <h1>LEND A HAND</h1>
+            <h1 class="text-3xl ">LEND A HAND</h1>
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">CREATE POST</button>
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">MANAGE POST</button>
         </div>
         <!-- right part -->
-        <div>
+        <div class="image">
             <img src="/code/Assets/CC.jpeg" alt=""
             loading="lazy"
             width="233"
