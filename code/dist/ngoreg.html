@@ -9,10 +9,55 @@
         body{
             background-color: #FFF4E0;
         }
+
+        .hero:hover .ji {
+             display: block;
+        }
+
+        ul{
+            background-color: slategray;
+        }
     </style>
 </head>
 <body>
-    <div class="container mx-auto mt-8">
+    <div>
+        <nav class="bg-slate-500">
+            <ul class="flex text-white space-x-5 border rounded-md m-2 mt-2 mb-2 p-2 justify-between">
+                
+                <li class="ml-0 mt-2 space-x-32 text-lg leading-3 text-yellow-800 cursor-none">
+                    NGO Connect
+                </li>
+
+            
+            <li>
+                <ul class="flex text-white space-x-5">
+                <li class="hover:text-grey cursor-pointer transition-all duration-200 relative group"><a href="#">Home</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
+                </li>
+                <li class="hover:text-grey cursor-pointer transition-all duration-200 relative group">Browse
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
+
+                </li>
+                <li class="hover:text-grey cursor-pointer transition-all duration-200 relative group">About Us
+                    <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
+
+                </li>
+
+                <div class="hero">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded relative">
+                        <img src="/Assets/user_profile.png">
+                    </button>
+                    <div class="absolute hidden bg-white rounded-lg py-2 w-24 m-auto shadow-lg ji">
+                      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</a>
+                      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Log Out</a>
+                    </div>
+                </ul>
+                </li>
+            </li>     
+                  
+            </ul>
+        </nav>
+        
         <h1 class="text-3xl font-bold mb-4">Register Your NGO</h1>
         <form action="submit.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <!-- NGO Name -->
@@ -64,5 +109,6 @@
             </div>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
