@@ -6,27 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Post</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-     
+     <style>
+        table,td,th,tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        .textcolor{
+      color: #2E4057;
+    }
+    .photosist{
+            animation:10s infinite linear movephotos;
+        }
+        @keyframes movephotos{
+               0%{
+                top:0;
+               }
+               100%{
+                top: -50%;
+               }
+        }
+     </style>
 </head>
 <body>
-    <section class="realtive bg-blue-900  overflow-x-hidden overflow-y-auto w-full">
-        <!-- images part -->
-       <div class="w-10/12 max-w-[1080px]">
-        <img src="" alt="">
-        <img src="" alt="">
-       </div>
-       <!-- title location time  description-->
-       <div class="flex">
-        <!-- description -->
-        <div>
-
+    <section class="bg-[#FFF4E0] relative pt-40 pb-12  -mt-[200px] -z-[100]">
+        <div class="w-11/12 max-w-[1080px] relative mx-auto flex flex-row gap-2">
+            <!-- left part -->
+            <div class="flex flex-col justify-center max-w-[calc(100%-500px)] textcolor">
+                <h2 class="font-bold text-3xl ">
+                    Location
+                </h2>
+                <h2 class="font-bold text-3xl mt-4">
+                    Time
+                </h2>
+                 <h2 class="font-bold text-3xl mt-4">
+                    Description
+                 </h2>
+                 <p class="mt-4">kehdu tumhe ya chup rahu dil mein mere aaj kya hai bolo toh jaanu guru tumko maanu...
+                    naina jo saanjh khwab dekhte the naina ghutan mein band ho gye hai yun 
+                    yeh mera dil pyaar ka deewana dewana dewana pyaar ka parwana
+                    tumhe jo mene dekha tumhe jo mene jana jo hosh tha woh toh gyaaa 
+                    tumse milke dil ka hai jo haal kya kahe ho gya hai aisa yeh kamal kya kahe
+                 </p>
+            </div>
+            <!-- image part -->
+            <div class="h-[500px] w-[500px]  relative overflow-y-hidden">
+                <div style="background:linear-gradient(180deg, #f4f8ff, #fff0)"
+                class="absolute w-full top-0 h-[150px] z-50"></div>
+                <img src="Assets/AA.jpg" alt="" 
+                class="absolute h-auto object-cover mt-28 photoslist">
+                <!--<img src="Assets/BB.jpg" alt=""
+                class="absolute h-auto object-cover mt-4 photoslist">
+                <img src="Assets/CC.jpg" alt=""
+                class="absolute h-auto object-cover photoslist">  -->
+                
+                <div style="background:linear-gradient(0deg, #f4f8ff, #fff0)"
+                class="absolute w-full bottom-0 h-[150px] z-50"></div>
+            </div>
         </div>
-        <!-- time location -->
-        <div class="flex flex-col">
-         <h1>Time</h1>
-         <h1>location</h1>
-        </div>
-       </div>
+        <table class="mx-auto mt-24">
+            <thead><tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Contact</th>
+            </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>s</td>
+                    <td>p</td>
+                    <td>d</td>
+                </tr>
+            </tbody>
+            <tfoot>
+           <tr>
+               <td>w</td>
+               <td>x</td>
+               <td>y</td>
+           </tr>
+            </tfoot>
+           </table>
+    </section>
+       
     </section>
     <script src="index.js"></script>
 </body>
