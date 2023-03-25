@@ -6,6 +6,7 @@ module.exports = {
         sub:'./src/sub.js',
         NGOreg:'./src/NGOreg.js',
         browse:'./src/browse.js',
+        createPost: './src/createPost.js',
     },
   output: {
     path: path.resolve(__dirname, 'dist'),
