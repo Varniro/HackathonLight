@@ -11,7 +11,7 @@ import { getDatabase} from "firebase/database";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyBvcO-7-2-mkXH_h5cwHtyQjoJQUa5SgXQ",
     authDomain: "hackathonlight.firebaseapp.com",
     projectId: "hackathonlight",
