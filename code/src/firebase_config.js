@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth} from "firebase/auth";
 import { doc, getDoc } from 'firebase/firestore';
+import { getStorage} from "firebase/storage";
 import {
     getFirestore,
 } from 'firebase/firestore'
@@ -18,7 +19,8 @@ import { getDatabase} from "firebase/database";
     storageBucket: "hackathonlight.appspot.com",
     messagingSenderId: "392094118869",
     appId: "1:392094118869:web:0091546223d33e1546835c",
-    databaseURL: "https://hackathonlight-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    databaseURL: "https://hackathonlight-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    storageBucket: 'gs://hackathonlight.appspot.com',
   };
 
 // Initialize Firebase
@@ -26,10 +28,12 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getFirestore(app)
 const database = getDatabase(app);
+const storage = getStorage(app);
 
 
 export {
     auth,
     db,
-    database
+    database,
+    storage,
 }
