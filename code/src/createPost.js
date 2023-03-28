@@ -9,7 +9,7 @@ document.getElementById('sub').addEventListener('click', (e)=>{
     onAuthStateChanged(auth, (user) => {
         if (user) {
             const postData = {
-                author: user.ngoName,
+                // author: user.ngoName,
                 uid: user.uid,
                 desc: document.getElementById('description').value,
                 title: document.getElementById('name').value,
@@ -21,8 +21,8 @@ document.getElementById('sub').addEventListener('click', (e)=>{
              const newPostKey = push(child(sRef(database), 'posts')).key;
 
              const updates = {};
-            updates['/posts/' + newPostKey] = postData;
-            updates['/users/' + uid + '/posts/' + newPostKey] = postData;
+            // updates['/posts/' + newPostKey] = postData;
+            updates['/users/' + user.uid + '/posts/' + newPostKey] = postData;
 
             update(sRef(database), updates);
 
