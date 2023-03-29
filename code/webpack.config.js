@@ -5,8 +5,13 @@ module.exports = {
         index:'./src/index.js',
         sub:'./src/sub.js',
         NGOreg:'./src/NGOreg.js',
+        volReg:'./src/volReg.js',
         browse:'./src/browse.js',
         createPost: './src/createPost.js',
+        login: './src/login.js',
+        dash: './src/dash.js',
+        manage: './src/manage.js',
+        post: './src/post.js'
     },
   output: {
     path: path.resolve(__dirname, 'dist'),

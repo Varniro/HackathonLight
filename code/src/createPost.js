@@ -9,7 +9,7 @@ document.getElementById('image').addEventListener('change', (e)=>{
     img = e.target.files[0]
 })
 
-document.getElementById('sub').addEventListener('click', (e)=>{
+document.getElementById('form').addEventListener('submit', (e)=>{
     e.preventDefault();
     onAuthStateChanged(auth, (user) => {
         if (user) {

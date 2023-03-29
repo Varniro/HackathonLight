@@ -7,6 +7,7 @@ console.log("ok")
 
 document.getElementById('submitbt').addEventListener('click', (e)=>{
     e.preventDefault()
+    e.target.disabled = true
     console.log("nana")
 
     const uName = document.getElementById('cp_name').value
@@ -26,12 +27,9 @@ document.getElementById('submitbt').addEventListener('click', (e)=>{
         NGO_name: document.getElementById('ngo_name').value,
         Description: document.getElementById('description').value,
         isNgo : true
-      });
-
-      user.displayName = document.getElementById('cp_name').value
-      user.ngoName = document.getElementById('ngo_name').value
-      user.Desc = document.getElementById('description').value
-      user.type = "NGO"
+      }).then(()=>{
+        window.location.href = 'ngodashboard.html'
+      })
 
 
     })
@@ -43,16 +41,3 @@ document.getElementById('submitbt').addEventListener('click', (e)=>{
       // ..
     });
 })
-
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    console.log(user.uid)
-    document.location.href = "ngodashboard.html"
-    // ...
-  } else {
-    // User is signed out
-    // ...
-  }
-});

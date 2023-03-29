@@ -18,7 +18,7 @@
 <body>
   <div class="container mx-auto mt-8">
     <h1 class="text-3xl font-bold mb-4 text-white">CREATE YOUR POST</h1>
-  <form action="submit.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
+  <form id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
    
    <!-- name -->
     <div class="mb-4">
@@ -26,7 +26,7 @@
       <label class="block text-gray-700 font-bold mb-2" for="name">
         Name
       </label>
-      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter the name of event ">
+      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter the name of event " required>
     </div>
     <!-- image -->
     <div class="mb-4">
@@ -34,7 +34,7 @@
       <label class="block text-gray-700 font-bold mb-2" for="image">
         Image
       </label>
-      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="image" type="file" multiple placeholder="upload images">
+      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="image" type="file" multiple placeholder="upload images" required>
     </div>
     <!-- description -->
     <div class="mb-4">
@@ -42,22 +42,22 @@
       <label class="block text-gray-700 font-bold mb-2" for="description">
         Description
       </label>
-      <textarea class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" placeholder="Describe your event"></textarea>
+      <textarea class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" placeholder="Describe your event" required></textarea>
     </div>
     <!-- date -->
     <div class="mb-4">
       <label for="date" class="block text-gray-700 font-bold mb-2">Date</label>
-      <input type="date" id="date" name="date" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+      <input type="date" id="date" name="date" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
     </div>
     <!-- time -->
     <div class="mb-4">
       <label for="time" class="block text-gray-700 font-bold mb-2">Time</label>
-      <input type="time" id="time" name="time" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+      <input type="time" id="time" name="time" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
     </div>
     <!-- location -->
     <div class="mb-4">
       <label for="location" class="block text-gray-700 font-bold mb-2">Location</label>
-      <input type="text" id="location" name="location" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " placeholder="Enter Location of event">
+      <input type="text" id="location" name="location" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " placeholder="Enter Location of event" required>
     </div>
     <!-- Submit Button -->
     <div class="flex items-center justify-between">
