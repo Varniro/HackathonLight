@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NGO Registration</title>
+    <title>Volunteer Registration</title>
     <!-- Import Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <style>
@@ -54,21 +54,13 @@
   
         
         
-        <h1 class="text-4xl font-bold m-5 text-center">Register Your NGO</h1>
+        <h1 class="text-4xl font-bold m-5 text-center">Register As a Volunteer</h1>
         <form action="submit.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 m-4">
-            <!-- NGO Name -->
-            <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2" for="ngo_name">
-                    NGO Name
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="ngo_name" name="ngo_name" type="text" placeholder="Enter NGO Name">
-            </div>
-            <!-- Contact Person Name -->
             <div class="mb-4">
                 <label class="block text-gray-700 font-bold mb-2" for="cp_name">
-                    Contact Person Name
+                    Your Name
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cp_name" name="cp_name" type="text" placeholder="Enter Contact Person Name">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cp_name" name="cp_name" type="text" placeholder="Enter Your Name">
             </div>
             <!-- Contact Number -->
             <div class="mb-4">
@@ -91,19 +83,21 @@
               </label>
               <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="*********">
             <!-- Description -->
+
             <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2" for="description">
-                    Description
+                <label class="block text-gray-700 font-bold mb-2" for="contact_email">
+                    Location
                 </label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" name="description" rows="5" placeholder="Enter Description"></textarea>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contact_email" name="contact_email" type="email" placeholder="Enter Your Location">
             </div>
+
             <!-- Submit Button -->
             <div class="flex items-center justify-between">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" id="submitbt">
                     Submit
                 </button>
             </div>
-            <p class="mt-4">Want to register as a volunteer? <a class="-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent underline" href="volReg.html">Click Here!</a></p>
+            <p class="mt-4">Want to register your NGO? <a class="-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent underline" href="ngoreg.html">Click Here!</a></p>
         </form>
     </div>
     <script src="index.js"></script>
