@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     count++
                 })
         
-                document.getElementById('lists').children[1].remove()
+                document.getElementById('lists').children[2].remove()
             })
         } else {
           // User is signed out

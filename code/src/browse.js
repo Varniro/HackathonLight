@@ -54,8 +54,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
               document.getElementById('lists').children[0].remove()
           })
         } else {
-          // User is signed out
-          // ...
+          window.location.href = "login.html"
         }
       })
 });
